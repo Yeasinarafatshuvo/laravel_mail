@@ -1,15 +1,15 @@
 #command for  mail
-php artisan make:mail SendTestMail
-#Mail code
- Mail::to('test@gmail.com')->send(new SendMail());
-    echo "Mail sent";
-#By specefic formate using markdown
-php artisan make:mail SendMarkdownMail --markdown=emails.markdown
-wirte code like this in web.php
-Route::get('/', function () {
+php artisan make:mail SendTestMail <br>
+#Mail code<br>
+ Mail::to('test@gmail.com')->send(new SendMail());<br>
+    echo "Mail sent";<br>
+#By specefic formate using markdown<br>
+php artisan make:mail SendMarkdownMail --markdown=emails.markdown<br>
+wirte code like this in web.php<br>
+Route::get('/', function () {<br>
     
-    Mail::to('test@gmail.com')->send(new SendMarkdownMail());
-    echo "Mail sent";
+    Mail::to('test@gmail.com')->send(new SendMarkdownMail());<br>
+    echo "Mail sent";<br>
 
    
 });
